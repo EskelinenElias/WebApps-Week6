@@ -33,14 +33,14 @@ router.post("/", async (req, res) => {
         return;
     }
     // Check if an offer exists with the same title
-    if (await Offer_1.Offer.findOne({ title: title })) {
-        // Offer with the same title already exists
-        console.log(`Can't add offer; Offer with title ${title} already exists`);
-        res.status(400).json({
-            message: `Can't add offer; Offer with title ${title} already exists`,
-        });
-        return;
-    }
+    // if (await Offer.findOne({ title: title })) {
+    //   // Offer with the same title already exists
+    //   console.log(`Can't add offer; Offer with title ${title} already exists`);
+    //   res.status(400).json({
+    //     message: `Can't add offer; Offer with title ${title} already exists`,
+    //   });
+    //   return;
+    // }
     // Add new offer
     const newOffer = new Offer_1.Offer({
         title: title,
