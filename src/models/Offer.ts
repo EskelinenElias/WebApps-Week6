@@ -1,6 +1,6 @@
-import { Schema, model } from "mongoose";
+import { Document, Schema, model } from "mongoose";
 
-interface IOffer {
+interface IOffer extends Document {
   title: string;
   price: number;
   description: string;
