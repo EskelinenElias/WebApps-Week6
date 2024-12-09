@@ -46,7 +46,7 @@ router.post('/', async (req: Request, res: Response) => {
   
   // Save offer
   newOffer.save()
-  res.status(200).json(`Added offer '${title}'`)
+  res.status(201).json(`Added offer '${title}'`)
 });
 
 export default router; 
