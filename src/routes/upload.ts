@@ -36,7 +36,7 @@ router.post("/", upload.single("image"), async (req: Request, res: Response) => 
     }
     
     // Check if image file was included in the request
-    let imageId: string | undefined;
+    let imageId: any;
     if (file) {
       
       // Create new image
@@ -47,7 +47,7 @@ router.post("/", upload.single("image"), async (req: Request, res: Response) => 
     
       // Save image
       const savedImage = await newImage.save(); 
-      imageId = savedImage._id as string
+      imageId = savedImage._id; 
     }
     
     // Add new offer
