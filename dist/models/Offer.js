@@ -6,8 +6,9 @@ const OfferSchema = new mongoose_1.Schema({
     title: { type: String, required: true },
     price: { type: Number, required: true },
     description: { type: String, required: true },
-    image: { type: String, required: false }
+    image: { type: String, required: false },
 });
 const Offer = (0, mongoose_1.model)("Offer", OfferSchema);
 exports.Offer = Offer;
 exports.default = Offer;
+// eof

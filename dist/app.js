@@ -13,7 +13,8 @@ const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, morgan_1.default)("dev"));
 // Add routing
-app.use('/', routes_1.default);
+app.use("/", routes_1.default);
 // Serve static files
-app.use(express_1.default.static(path_1.default.join(__dirname, '../public')));
+app.use(express_1.default.static(path_1.default.join(__dirname, "../public")));
 exports.default = app;
+// eof
