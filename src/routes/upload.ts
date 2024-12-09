@@ -46,8 +46,8 @@ router.post("/", upload.single("image"), async (req: Request, res: Response) => 
       });
     
       // Save image
-      const savedImage = await newImage.save();
-      imageId = savedImage._id.toString();
+      const savedImage = await newImage.save(); 
+      imageId = savedImage._id as string
     }
     
     // Add new offer

@@ -46,7 +46,7 @@ router.post("/", multer_1.default.single("image"), async (req, res) => {
             });
             // Save image
             const savedImage = await newImage.save();
-            imageId = savedImage._id.toString();
+            imageId = savedImage._id;
         }
         // Add new offer
         const newOffer = new Offer_1.default({

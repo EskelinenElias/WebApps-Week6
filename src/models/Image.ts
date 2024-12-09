@@ -3,7 +3,6 @@ import { Types, Document, Schema, model } from "mongoose";
 interface IImage extends Document {
   filename: string;
   path: number;
-  _id: Types.ObjectId; 
 }
 
 const ImageSchema = new Schema<IImage>({
