@@ -14,7 +14,7 @@ const OfferSchema = new Schema<IOffer>({
   image: { type: String, required: false }
 });
 
-const Offer = model<IOffer>("Todo", OfferSchema);
+const Offer = model<IOffer>("Offer", OfferSchema);
 
 export default Offer;
 export { Offer };
