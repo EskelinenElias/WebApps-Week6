@@ -5,12 +5,13 @@ const router = Router();
 
 // POST route to upload an offer
 router.post('/', async (req: Request, res: Response) => {
-  console.log(req)
+
   // Parse request
   const title: string = req.body.title;
   const price: number = req.body.price; 
   const description: string = req.body.description; 
   const image: string = req.body.string; 
+  
   // Validate request
   if (!title) {
     console.log("Invalid request; Offer must have a title")

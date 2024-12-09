@@ -5,7 +5,6 @@ const Offer_1 = require("../models/Offer");
 const router = (0, express_1.Router)();
 // POST route to upload an offer
 router.post('/', async (req, res) => {
-    console.log(req);
     // Parse request
     const title = req.body.title;
     const price = req.body.price;
@@ -43,6 +42,6 @@ router.post('/', async (req, res) => {
     });
     // Save offer
     newOffer.save();
-    res.status(200).json(`Added offer '${title}'`);
+    res.status(201).json(`Added offer '${title}'`);
 });
 exports.default = router;
