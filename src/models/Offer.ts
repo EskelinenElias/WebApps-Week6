@@ -12,7 +12,7 @@ const OfferSchema = new Schema<IOffer>({
   description: { type: String, required: true },
 });
 
-const Offer = model<IOffer>("Offer", OfferSchema);
+const Offer = model<IOffer>("offers", OfferSchema);
 
 export default Offer;
 export { Offer };

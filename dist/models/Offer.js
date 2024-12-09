@@ -7,7 +7,7 @@ const OfferSchema = new mongoose_1.Schema({
     price: { type: Number, required: true },
     description: { type: String, required: true },
 });
-const Offer = (0, mongoose_1.model)("Offer", OfferSchema);
+const Offer = (0, mongoose_1.model)("offers", OfferSchema);
 exports.Offer = Offer;
 exports.default = Offer;
 // eof
