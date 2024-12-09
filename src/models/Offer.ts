@@ -4,6 +4,7 @@ interface IOffer extends Document {
   title: string;
   price: number;
   description: string;
+  imageId?: string; 
 }
 
 const OfferSchema = new Schema<IOffer>({
@@ -15,19 +16,5 @@ const OfferSchema = new Schema<IOffer>({
 const Offer = model<IOffer>("offers", OfferSchema);
 
 export default Offer;
-export { Offer };
 
 // eof
-
-
-
-
-
-
-
-
-
-
-
-
-

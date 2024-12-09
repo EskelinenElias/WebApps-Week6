@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@types/mongoose": "^5.11.96",
     "@types/morgan": "^1.9.9",
+    "@types/multer": "^1.4.12",
     "basic-auth": "^2.0.1",
     "bson": "^6.10.0",
     "debug": "^2.6.9",
@@ -28,6 +30,7 @@
     "sparse-bitfield": "^3.0.3",
     "tr46": "^4.1.1",
     "undici-types": "^6.19.8",
+    "uuid": "^11.0.3",
     "webidl-conversions": "^7.0.0",
     "whatwg-url": "^13.0.0"
   },
