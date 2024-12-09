@@ -45,8 +45,7 @@ router.post("/", async (req, res) => {
     const newOffer = new Offer_1.Offer({
         title: title,
         price: price,
-        description: description,
-        image: image,
+        description: description
     });
     // Save offer
     newOffer.save();
